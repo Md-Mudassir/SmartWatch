@@ -10,3 +10,29 @@
 img {
   margin-left: 15%;
 }
+
+.back {
+  position: absolute;
+  width: 286px;
+  height: 375px;
+
+  background: #3b3b3b;
+  border-radius: 71px;
+}
+.cover {
+  position: absolute;
+  width: 286px;
+  height: 329px;
+
+  background: #000000;
+  border-radius: 71px;
+}
+
+.strap {
+  position: absolute;
+  width: 147px;
+  height: 151px;
+
+  background: #000000;
+  border-radius: 29px;
+}
