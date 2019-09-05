@@ -1,5 +1,5 @@
 .box1 {
-  background-color: rgb(0, 195, 255);
+  background-color: rgb(0, 134, 243);
   height: 100vh;
 }
 
@@ -12,7 +12,8 @@ img {
 }
 
 .back {
-  position: absolute;
+  position: relative;
+  top: 20%;
   width: 286px;
   height: 375px;
 
@@ -20,7 +21,7 @@ img {
   border-radius: 71px;
 }
 .cover {
-  position: absolute;
+  position: relative;
   width: 286px;
   height: 329px;
 
@@ -28,11 +29,42 @@ img {
   border-radius: 71px;
 }
 
-.strap {
-  position: absolute;
-  width: 147px;
-  height: 151px;
-
+.topstrap {
+  position: relative;
+  width: 142px;
+  height: 121px;
+  /* bottom: 40%;
+  left: 25%; */
   background: #000000;
   border-radius: 29px;
+}
+
+.tstrapdesign {
+  position: relative;
+  width: 142px;
+  height: 175px;
+  bottom: 50%;
+  left: 25%;
+  background: #3b3b3b;
+  border-radius: 27px;
+}
+
+.botstomstrap {
+  position: relative;
+  width: 142px;
+  height: 141px;
+  /* bottom: 40%;
+  left: 25%; */
+  background: #000000;
+  border-radius: 29px;
+}
+
+.bstrapdesign {
+  position: relative;
+  width: 142px;
+  height: 176px;
+  bottom: 10%;
+  left: 25%;
+  background: #3b3b3b;
+  border-radius: 27px;
 }
