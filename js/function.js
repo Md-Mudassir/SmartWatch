@@ -21,8 +21,10 @@ function Time() {
 
   var d = new Date();
   weekday_value = d.getDay();
-  var x = document.getElementById("day");
+  var x = document.getElementById("time");
+  let y = document.getElementById("day");
   var h = addZero(d.getHours());
   var m = addZero(d.getMinutes());
-  x.innerHTML = weekdays[weekday_value] + ", " + h + ":" + m;
+  x.innerHTML = h + ":" + m;
+  y.innerHTML = weekdays[weekday_value];
 }
