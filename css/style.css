@@ -21,7 +21,7 @@ img {
   border-radius: 71px;
 }
 .cover {
-  position: relative;
+  position: absolute;
   width: 286px;
   height: 329px;
 
@@ -32,39 +32,42 @@ img {
 .topstrap {
   position: relative;
   width: 142px;
-  height: 121px;
-  /* bottom: 40%;
-  left: 25%; */
+  height: 111px;
+
   background: #000000;
   border-radius: 29px;
 }
 
 .tstrapdesign {
-  position: relative;
+  position: absolute;
   width: 142px;
-  height: 175px;
-  bottom: 50%;
-  left: 25%;
+  height: 145px;
+  top: 5%;
   background: #3b3b3b;
   border-radius: 27px;
 }
 
-.botstomstrap {
+.topstrap2 {
   position: relative;
   width: 142px;
-  height: 141px;
-  /* bottom: 40%;
-  left: 25%; */
+  height: 111px;
+  top: 20%;
   background: #000000;
   border-radius: 29px;
 }
 
-.bstrapdesign {
-  position: relative;
+.tstrapdesign2 {
+  position: absolute;
   width: 142px;
-  height: 176px;
-  bottom: 10%;
-  left: 25%;
+  height: 125px;
+  top: 77%;
+  left: 40%;
   background: #3b3b3b;
   border-radius: 27px;
+}
+
+.time {
+  text-align: center;
+  margin-top: 30%;
+  font-size: 4em;
 }
