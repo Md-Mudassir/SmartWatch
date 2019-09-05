@@ -5,14 +5,12 @@
 
 .boxy {
   margin-top: 40%;
-}
-
-img {
-  margin-left: 15%;
+  font-weight: bolder;
+  color: #000000;
 }
 
 .back {
-  position: absolute;
+  position: relative;
   top: 20%;
   width: 286px;
   height: 375px;
@@ -21,7 +19,7 @@ img {
   border-radius: 71px;
 }
 .cover {
-  position: relative;
+  position: absolute;
   width: 286px;
   height: 329px;
 
@@ -30,7 +28,7 @@ img {
 }
 
 .topstrap {
-  position: absolute;
+  position: relative;
   width: 142px;
   height: 111px;
 
@@ -49,11 +47,12 @@ img {
 }
 
 .topstrap2 {
-  position: absolute;
+  position: relative;
   width: 142px;
   height: 111px;
   top: 20%;
   background: #000000;
+
   border-radius: 29px;
 }
 
@@ -72,29 +71,48 @@ img {
   position: relative;
   text-align: center;
   font-size: 4em;
-  top: 8%;
+  top: 25%;
 }
 
 .day {
   position: relative;
   text-align: center;
   font-size: 1.5em;
-  top: 8%;
+  top: 21%;
 }
 
 .musicicon {
-  position: relative;
-  top: 73%;
+  position: absolute;
+  top: 82%;
+  left: 45%;
+  color: white;
 }
 
 .clockicon {
-  position: relative;
+  position: absolute;
   right: 15%;
   top: 82%;
+  color: white;
 }
 
 .msgicon {
   position: absolute;
   left: 15%;
   top: 82%;
+  color: white;
+}
+
+.musicicon:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.msgicon:hover {
+  color: rgb(0, 152, 199);
+  cursor: pointer;
+}
+
+.clockicon:hover {
+  color: rgb(199, 0, 182);
+  cursor: pointer;
 }
