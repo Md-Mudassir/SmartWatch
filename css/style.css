@@ -67,6 +67,9 @@
   z-index: -1;
 }
 
+.time:hover {
+  cursor: pointer;
+}
 .time {
   position: relative;
   text-align: center;
