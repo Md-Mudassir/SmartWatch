@@ -5,8 +5,8 @@ Hey Geeks! This project is a web based smart watch which can play music over spo
 ## Design:
 Initially I designed the design layout of each process using Figma. [Click here to view the design]
 
-##Design in HTML,CSS :
+## Design in HTML,CSS :
 Next I tried to implement the design in HTML document using CSS,Bootstrap.
 
-##Code:
+## Code:
 After completion of the design I added the functionalities using JavaScript & jQuery.
