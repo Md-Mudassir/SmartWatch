@@ -1,3 +1,4 @@
+//messages array
 function msg() {
   let messages = ["AXFLKRT", "AXSNDL", "Shaik"];
   document.querySelector("#msg #list1").innerHTML = messages[0];
@@ -12,10 +13,7 @@ function addZero(i) {
   }
   return i;
 }
-function laptime() {
-  document.getElementsByClassName("lap").innerHTML = "fs";
-}
-laptime();
+
 function Time() {
   var weekdays = new Array(7);
   weekdays[0] = "Sunday";
@@ -38,7 +36,7 @@ function Time() {
   y.innerHTML = weekdays[weekday_value];
 }
 
-//Timer
+//Timer function
 let watch = document.getElementsByClassName("digits")[0],
   start = document.getElementById("timerplay"),
   stop = document.getElementById("stop"),
@@ -87,7 +85,7 @@ reset.onclick = function() {
   minutes = 0;
   hours = 0;
 };
-
+//show & hide the timer buttons
 function hidden() {
   document.getElementById("stop").style.visibility = "hidden";
   document.getElementById("timerplay").style.visibility = "hidden";
@@ -101,7 +99,7 @@ function show() {
 }
 
 //JQUERY FUNCTIONS
-
+//toggling the screen using the tags
 $(".musicicon").on("click", function() {
   $("#player").toggle();
   hidden();
@@ -125,6 +123,7 @@ $(".msgicon").on("click", function() {
   hidden();
 });
 
+//message contents
 $("#msg #list1").on("click", function() {
   $("#msg #list1").html("Your order ID#0927 will be delivered today");
 });
