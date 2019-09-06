@@ -28,23 +28,22 @@
                         <i class="msgicon fa fa-commenting-o fa-2x d-flex justify-content-start"></i>
                         <i class="clockicon d-flex justify-content-end fa fa-clock-o fa-2x"></i>
                         <i class="musicicon d-flex justify-content-center fa fa-music fa-2x"></i>
-                        <i id="timerplay" class=" fa fa-play fa-2x d-flex justify-content-center"></i>
+                        <i id="timerplay" class="fa fa-play fa-2x d-flex justify-content-center"></i>
                         <i id="reset" class="fa fa-repeat fa-2x  d-flex justify-content-start"></i>
                         <i id="stop" class="fa fa-stop fa-2x d-flex justify-content-end"></i>
-                        <!-- <h1 onclick="Time()" id="time" class="text-white time">Unlock?</h1>
-                        <h1 id="day" class="text-white day"></h1> -->
+                        <h5 id="watch" class="text-white d-flex justify-content-center"></h5>
+                        <h1 onclick="Time()" id="time" class="text-white time">Unlock</h1>
+                        <h1 id="day" class="text-white day"></h1>
                         <h1 class="text-white digits">00:00:00</h1>
                         <h1 class="lap">00:00:00</h1>
 
-                        <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
+                        <iframe id="player" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3"
                             width="240" height="230" frameborder="0" allowtransparency="true"
                             allow="encrypted-media"></iframe>
                     </div>
                 </div>
                 <div class=" tstrapdesign2">
-                    <div class="topstrap2">
-                        <i class="fa fa-home fa-2x home"></i>
-                    </div>
+                    <div class="topstrap2"></div>
                 </div>
             </div>
         </div>
@@ -62,21 +61,33 @@
         crossorigin="anonymous"></script>
     <script src="js/function.js"></script>
     <script>
-
-        $('.musicicon').on('click', function () {
-            $('#player').toggle();
+        //JQUERY FUNCTIONS
+        $(".musicicon").on("click", function () {
+            $("#player").toggle();
         });
 
-        $('clockicon').on('click', function () {
-            $('#player').toggle();
-        })
-        $('#stop').on('click', function () {
-            $('.lap').css('color', 'red');
-            $('.lap').replaceWith(document.getElementsByClassName('digits'));
-        })
-        // $('.msgicon').on('click', function () {
-        //     $('#player').toggle();
-        // });
+        $(".clockicon").on("click", function () {
+            $('#day,#time,#player').hide();
+            $(".digits,.lap").show();
+        });
+
+        $("#watch").on("click", function () {
+            $("#day,#time").show();
+            $(".digits,.lap,#player,#watch").hide();
+            $("#stop").hide();
+
+        });
+        $(".msgicon").on("click", function () {
+            $('#day,#time,#player').hide();
+            $(".digits,.lap").hide();
+        });
+
+        $(document).ready(function () {
+            $("#player,#watch").hide();
+            $('#timerplay,#stop,#reset').hide();
+            $('.digits,.lap').hide();
+
+        });
     </script>
 
 </body>

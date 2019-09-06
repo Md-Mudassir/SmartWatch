@@ -74,14 +74,14 @@
   position: relative;
   text-align: center;
   font-size: 4em;
-  top: 25%;
+  top: 10%;
 }
 
 .day {
   position: relative;
   text-align: center;
   font-size: 1.5em;
-  top: 21%;
+  top: 7%;
 }
 
 .musicicon {
@@ -154,13 +154,13 @@
   position: relative;
   text-align: center;
   font-size: 4em;
-  top: 15%;
+  top: 5%;
 }
 .lap {
   position: relative;
   text-align: center;
   font-size: 4em;
-  top: 10%;
+  top: 1%;
 }
 iframe {
   position: absolute;
@@ -168,14 +168,19 @@ iframe {
   top: 8%;
 }
 
-.home {
+h5:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#homey {
   position: absolute;
   top: 30%;
   left: 40%;
   color: white;
 }
 
-.home:hover {
+#homey:hover {
   color: rgb(0, 195, 255);
   cursor: pointer;
 }

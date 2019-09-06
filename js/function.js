@@ -21,16 +21,20 @@ function Time() {
 
   var d = new Date();
   weekday_value = d.getDay();
-  var x = document.getElementById("time");
+  let x = document.getElementById("time");
   let y = document.getElementById("day");
+  let w = document.getElementById("watch");
   var h = addZero(d.getHours());
   var m = addZero(d.getMinutes());
   x.innerHTML = h + ":" + m;
+  w.innerHTML = h + ":" + m;
   y.innerHTML = weekdays[weekday_value];
 }
 
+//Timer
 let watch = document.getElementsByClassName("digits")[0],
   start = document.getElementById("timerplay"),
+  lap = document.getElementsByClassName("lap"),
   stop = document.getElementById("stop"),
   clear = document.getElementById("clear"),
   seconds = 0,
@@ -60,6 +64,8 @@ function add() {
 }
 function timer() {
   t = setTimeout(add, 1000);
+
+  document.getElementsByClassName("lap").innerHTML = "eh";
 }
 
 /* Start button */
