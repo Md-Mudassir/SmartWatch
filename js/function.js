@@ -5,12 +5,6 @@ function msg() {
   document.querySelector("#msg #list3").innerHTML = messages[2];
 }
 
-function hidden() {
-  document.getElementById("stop").style.visibility = "hidden";
-  document.getElementById("timerplay").style.visibility = "hidden";
-  document.getElementById("reset").style.visibility = "hidden";
-}
-
 // day and time functions
 function addZero(i) {
   if (i < 10) {
@@ -18,7 +12,10 @@ function addZero(i) {
   }
   return i;
 }
-
+function laptime() {
+  document.getElementsByClassName("lap").innerHTML = "fs";
+}
+laptime();
 function Time() {
   var weekdays = new Array(7);
   weekdays[0] = "Sunday";
@@ -90,6 +87,12 @@ reset.onclick = function() {
   minutes = 0;
   hours = 0;
 };
+
+function hidden() {
+  document.getElementById("stop").style.visibility = "hidden";
+  document.getElementById("timerplay").style.visibility = "hidden";
+  document.getElementById("reset").style.visibility = "hidden";
+}
 
 function show() {
   document.getElementById("stop").style.visibility = "visible";

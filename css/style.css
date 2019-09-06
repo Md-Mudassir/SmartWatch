@@ -32,7 +32,9 @@
   width: 142px;
   height: 111px;
   background: #000000;
-  border-radius: 29px;
+  border-radius: 29px 0 29px 0;
+  /* border-bottom-left-radius: 100px; */
+  border-bottom-right-radius: 100px;
 }
 
 .tstrapdesign {
@@ -51,14 +53,14 @@
   height: 111px;
   top: 20%;
   background: #000000;
-
-  border-radius: 29px;
+  border-radius: 0 0 29px;
+  border-top-left-radius: 100px;
 }
 
 .tstrapdesign2 {
   position: absolute;
   width: 142px;
-  height: 125px;
+  height: 140px;
   top: 77%;
   /* top: 62%; */
   left: 40%;
@@ -84,17 +86,6 @@
   top: 7%;
 }
 
-#msgg {
-  padding: 10%;
-  position: relative;
-  height: 30%;
-  width: 200px;
-  top: 10%;
-  left: 15%;
-  background-color: white;
-  border: 1px solid red;
-  border-radius: 20%;
-}
 .musicicon {
   position: absolute;
   top: 82%;
@@ -179,7 +170,7 @@ iframe {
   top: 8%;
 }
 
-h5:hover {
+h6:hover {
   color: red;
   cursor: pointer;
 }
@@ -191,7 +182,7 @@ h5:hover {
   left: 10%;
   top: 18%;
   background-color: white;
-  border-radius: 0% 15% 15% 15%;
+  border-radius: 0% 25% 25% 25%;
 }
 
 .content {
