@@ -186,12 +186,12 @@ h5:hover {
 
 #msg {
   position: absolute;
-  height: 50%;
+  height: 55%;
   width: 80%;
   left: 10%;
-  top: 13%;
+  top: 18%;
   background-color: white;
-  border-radius: 0% 30% 30% 0%;
+  border-radius: 0% 15% 15% 15%;
 }
 
 .content {

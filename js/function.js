@@ -5,7 +5,7 @@ function msg() {
   document.querySelector("#msg #list3").innerHTML = messages[2];
 }
 
-function show() {
+function hidden() {
   document.getElementById("stop").style.visibility = "hidden";
   document.getElementById("timerplay").style.visibility = "hidden";
   document.getElementById("reset").style.visibility = "hidden";
@@ -91,29 +91,35 @@ reset.onclick = function() {
   hours = 0;
 };
 
-// function show() {
-//   document.getElementById("stop").style.visibility = "visible";
-//   document.getElementById("timerplay").style.visibility = "visible";
-//   document.getElementById("reset").style.visibility = "visible";
-// }
+function show() {
+  document.getElementById("stop").style.visibility = "visible";
+  document.getElementById("timerplay").style.visibility = "visible";
+  document.getElementById("reset").style.visibility = "visible";
+}
+
 //JQUERY FUNCTIONS
+
 $(".musicicon").on("click", function() {
   $("#player").toggle();
+  hidden();
 });
 
 $(".clockicon").on("click", function() {
   $("#day,#time,#player,#msg").hide();
   $(".digits,.lap").show();
+  show();
 });
 
 $("#watch").on("click", function() {
   $("#day,#time").show();
   $(".digits,.lap,#player,#stop,#msg").hide();
+  hidden();
 });
 
 $(".msgicon").on("click", function() {
   $("#day,#time,#player,.digits,.lap").hide();
   $("#msg").show();
+  hidden();
 });
 
 $("#msg #list1").on("click", function() {
@@ -129,4 +135,5 @@ $("#msg #list3").on("click", function() {
 });
 $(document).ready(function() {
   $("#player,#watch,#msg,.digits,.lap,.playbtn").hide();
+  hidden();
 });
