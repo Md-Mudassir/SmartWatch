@@ -34,6 +34,7 @@
                         <h5 id="watch" class="text-white d-flex justify-content-center"></h5>
                         <h1 onclick="Time()" id="time" class="text-white time">Unlock</h1>
                         <h1 id="day" class="text-white day"></h1>
+                        <div id="msg">Lorem ipsum dolor sit amet,</div>
                         <h1 class="text-white digits">00:00:00</h1>
                         <h1 class="lap">00:00:00</h1>
 
@@ -63,27 +64,28 @@
     <script>
         //JQUERY FUNCTIONS
         $(".musicicon").on("click", function () {
-            $("#player").toggle();
+            $("#player,#msg").toggle();
         });
 
         $(".clockicon").on("click", function () {
-            $('#day,#time,#player').hide();
+            $('#day,#time,#player,#msg').hide();
             $(".digits,.lap").show();
         });
 
         $("#watch").on("click", function () {
             $("#day,#time").show();
             $(".digits,.lap,#player").hide();
-            $("#stop").hide();
+            $("#stop,#msg").hide();
 
         });
         $(".msgicon").on("click", function () {
             $('#day,#time,#player').hide();
             $(".digits,.lap").hide();
+            $('#msg').show();
         });
 
         $(document).ready(function () {
-            $("#player,#watch").hide();
+            $("#player,#watch,#msg").hide();
             $('#timerplay,#stop,#reset').hide();
             $('.digits,.lap').hide();
 
