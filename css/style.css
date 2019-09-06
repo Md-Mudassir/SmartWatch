@@ -119,3 +119,63 @@
   color: rgb(199, 0, 182);
   cursor: pointer;
 }
+#reset {
+  position: absolute;
+  left: 15%;
+  top: 65%;
+  color: white;
+}
+#timerplay {
+  position: absolute;
+  top: 65%;
+  left: 46%;
+  color: white;
+}
+
+#stop {
+  position: absolute;
+  right: 15%;
+  top: 65%;
+  color: white;
+}
+#stop:hover {
+  color: red;
+  cursor: pointer;
+}
+#reset:hover {
+  color: red;
+  cursor: pointer;
+}
+#timerplay:hover {
+  color: red;
+  cursor: pointer;
+}
+.digits {
+  position: relative;
+  text-align: center;
+  font-size: 4em;
+  top: 15%;
+}
+.lap {
+  position: relative;
+  text-align: center;
+  font-size: 4em;
+  top: 10%;
+}
+iframe {
+  position: absolute;
+  left: 8%;
+  top: 8%;
+}
+
+.home {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: white;
+}
+
+.home:hover {
+  color: rgb(0, 195, 255);
+  cursor: pointer;
+}
