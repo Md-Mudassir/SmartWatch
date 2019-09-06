@@ -1,10 +1,10 @@
 function msg() {
-  let messages = ["hello", "good"];
-
-  document.querySelector("#msg > div").innerHTML = messages[0];
+  let messages = ["AXFLKRT", "AXSNDL", "Shaik"];
+  document.querySelector("#msg #list1").innerHTML = messages[0];
+  document.querySelector("#msg #list2").innerHTML = messages[1];
+  document.querySelector("#msg #list3").innerHTML = messages[2];
 }
 
-msg();
 function show() {
   document.getElementById("stop").style.visibility = "hidden";
   document.getElementById("timerplay").style.visibility = "hidden";
@@ -110,12 +110,23 @@ $("#watch").on("click", function() {
   $("#day,#time").show();
   $(".digits,.lap,#player,#stop,#msg").hide();
 });
+
 $(".msgicon").on("click", function() {
   $("#day,#time,#player,.digits,.lap").hide();
   $("#msg").show();
 });
 
+$("#msg #list1").on("click", function() {
+  $("#msg #list1").html("Your order ID#0927 will be delivered today");
+});
+
+$("#msg #list2").on("click", function() {
+  $("#msg #list2").html("Recharge of Rs:399 is successfull");
+});
+
+$("#msg #list3").on("click", function() {
+  $("#msg #list3").html("Where are you?");
+});
 $(document).ready(function() {
   $("#player,#watch,#msg,.digits,.lap,.playbtn").hide();
-  $("").hide();
 });
