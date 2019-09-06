@@ -1,5 +1,15 @@
-let time = document.getElementsByClassName("time");
-let day = document.getElementsByClassName("day");
+function msg() {
+  let messages = ["hello", "good"];
+
+  document.querySelector("#msg > div").innerHTML = messages[0];
+}
+
+msg();
+function show() {
+  document.getElementById("stop").style.visibility = "hidden";
+  document.getElementById("timerplay").style.visibility = "hidden";
+  document.getElementById("reset").style.visibility = "hidden";
+}
 
 // day and time functions
 function addZero(i) {
@@ -34,7 +44,6 @@ function Time() {
 //Timer
 let watch = document.getElementsByClassName("digits")[0],
   start = document.getElementById("timerplay"),
-  lap = document.getElementsByClassName("lap"),
   stop = document.getElementById("stop"),
   clear = document.getElementById("clear"),
   seconds = 0,
@@ -64,8 +73,6 @@ function add() {
 }
 function timer() {
   t = setTimeout(add, 1000);
-
-  document.getElementsByClassName("lap").innerHTML = "eh";
 }
 
 /* Start button */
@@ -76,10 +83,39 @@ stop.onclick = function() {
   clearTimeout(t);
 };
 
-/* Clear button */
+/* Reset button */
 reset.onclick = function() {
   watch.textContent = "00:00:00";
   seconds = 0;
   minutes = 0;
   hours = 0;
 };
+
+// function show() {
+//   document.getElementById("stop").style.visibility = "visible";
+//   document.getElementById("timerplay").style.visibility = "visible";
+//   document.getElementById("reset").style.visibility = "visible";
+// }
+//JQUERY FUNCTIONS
+$(".musicicon").on("click", function() {
+  $("#player").toggle();
+});
+
+$(".clockicon").on("click", function() {
+  $("#day,#time,#player,#msg").hide();
+  $(".digits,.lap").show();
+});
+
+$("#watch").on("click", function() {
+  $("#day,#time").show();
+  $(".digits,.lap,#player,#stop,#msg").hide();
+});
+$(".msgicon").on("click", function() {
+  $("#day,#time,#player,.digits,.lap").hide();
+  $("#msg").show();
+});
+
+$(document).ready(function() {
+  $("#player,#watch,#msg,.digits,.lap,.playbtn").hide();
+  $("").hide();
+});

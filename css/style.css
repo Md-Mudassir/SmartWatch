@@ -31,7 +31,6 @@
   position: relative;
   width: 142px;
   height: 111px;
-
   background: #000000;
   border-radius: 29px;
 }
@@ -41,7 +40,7 @@
   width: 142px;
   height: 145px;
   top: 5%;
-
+  /* top: 9%; */
   background: #3b3b3b;
   border-radius: 27px;
 }
@@ -61,6 +60,7 @@
   width: 142px;
   height: 125px;
   top: 77%;
+  /* top: 62%; */
   left: 40%;
   background: #3b3b3b;
   border-radius: 27px;
@@ -84,15 +84,16 @@
   top: 7%;
 }
 
-#msg {
-  position: absolute;
-  height: 50%;
-  width: 70%;
+#msgg {
+  padding: 10%;
+  position: relative;
+  height: 30%;
+  width: 200px;
   top: 10%;
   left: 15%;
   background-color: white;
-  border: 1px solid white;
-  border-radius: 0% 40% 40% 40%;
+  border: 1px solid red;
+  border-radius: 20%;
 }
 .musicicon {
   position: absolute;
@@ -169,8 +170,8 @@
 .lap {
   position: relative;
   text-align: center;
-  font-size: 4em;
-  top: 1%;
+  font-size: 3em;
+  color: grey;
 }
 iframe {
   position: absolute;
@@ -183,14 +184,16 @@ h5:hover {
   cursor: pointer;
 }
 
-#homey {
+#msg {
   position: absolute;
-  top: 30%;
-  left: 40%;
-  color: white;
+  height: 40%;
+  width: 80%;
+  left: 10%;
+  top: 10%;
+  background-color: white;
+  border-radius: 0% 30% 30% 30%;
 }
 
-#homey:hover {
-  color: rgb(0, 195, 255);
-  cursor: pointer;
+.content {
+  padding: 4%;
 }
