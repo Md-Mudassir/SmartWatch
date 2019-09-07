@@ -33,7 +33,7 @@ function Time() {
   var m = addZero(d.getMinutes());
   x.innerHTML = h + ":" + m;
   w.innerHTML = h + ":" + m;
-  y.innerHTML = weekdays[weekday_value];
+  y.innerHTML = weekdays[weekday_value] + " 🌧️";
 }
 
 //Timer function
