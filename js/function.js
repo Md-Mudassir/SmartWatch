@@ -37,7 +37,7 @@ function Time() {
 }
 
 //Timer function
-let watch = document.getElementsByClassName("digits"),
+let watch = document.getElementsByClassName("digits")[0],
   start = document.getElementById("timerplay"),
   stop = document.getElementById("stop"),
   clear = document.getElementById("clear"),
