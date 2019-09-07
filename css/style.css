@@ -54,8 +54,8 @@
   position: absolute;
   width: 142px;
   height: 145px;
-  top: 5%;
-  /* top: 9%; */
+  /* top: 5%; */
+  top: 9%;
   background: #3b3b3b;
   border-radius: 27px;
 }
@@ -75,8 +75,8 @@
   width: 142px;
   height: 140px;
   top: 77%;
-  /* top: 62%; */
-  left: 40%;
+  top: 62%;
+  /* left: 40%; */
   background: #3b3b3b;
   border-radius: 27px;
   z-index: -1;
