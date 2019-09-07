@@ -125,7 +125,6 @@ h6:hover {
   color: red;
   cursor: pointer;
 }
-
 #msg {
   position: absolute;
   height: 60%;
@@ -133,22 +132,22 @@ h6:hover {
   left: 10%;
   top: 15%;
   background-color: white;
-  border-radius: 0% 17% 17% 17%;
+  border-radius: 17%;
 }
 
-#msg #list1:hover {
+#list1:hover {
   cursor: pointer;
   color: blue;
   font-weight: lighter;
 }
 
-#msg #list2:hover {
+#list2:hover {
   cursor: pointer;
   color: blue;
   font-weight: lighter;
 }
 
-#msg #list3:hover {
+#list3:hover {
   cursor: pointer;
   color: blue;
   font-weight: lighter;
