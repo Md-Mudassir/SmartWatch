@@ -37,7 +37,7 @@ function Time() {
 }
 
 //Timer function
-let watch = document.getElementsByClassName("digits")[0],
+let watch = document.getElementsByClassName("digits"),
   start = document.getElementById("timerplay"),
   stop = document.getElementById("stop"),
   clear = document.getElementById("clear"),
@@ -85,6 +85,7 @@ reset.onclick = function() {
   minutes = 0;
   hours = 0;
 };
+
 //show & hide the timer buttons
 function hidden() {
   document.getElementById("stop").style.visibility = "hidden";
@@ -99,6 +100,7 @@ function show() {
 }
 
 //JQUERY FUNCTIONS
+
 //toggling the screen using the tags
 $(".musicicon").on("click", function() {
   $("#player").toggle();
@@ -144,6 +146,8 @@ $("#msg #list2").on("click", function() {
 $("#msg #list3").on("click", function() {
   $("#msg #list3").html("Where are you?" + "<hr>");
 });
+
+//onload hide the elements
 $(document).ready(function() {
   $("#player,#watch,#msg,.digits,.lap,.playbtn").hide();
   hidden();
