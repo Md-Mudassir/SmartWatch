@@ -4,7 +4,7 @@
 }
 
 .back {
-  position: relative;
+  position: absolute;
   top: 20%;
   width: 286px;
   height: 375px;
@@ -19,6 +19,13 @@
 
   background: #000000;
   border-radius: 71px;
+}
+
+.clockicon {
+  position: absolute;
+  right: 15%;
+  top: 82%;
+  color: white;
 }
 
 .clockicon:hover {
@@ -40,69 +47,10 @@
   top: 5%;
 }
 
-.topstrap {
-  position: relative;
-  width: 142px;
-  height: 111px;
-  background: #000000;
-  border-radius: 29px 0 29px 0;
-  /* border-bottom-left-radius: 100px; */
-  border-bottom-right-radius: 100px;
-}
-
-.tstrapdesign {
-  position: absolute;
-  width: 142px;
-  height: 145px;
-  top: 5%;
-  /* top: 9%; */
-  background: #3b3b3b;
-  border-radius: 27px;
-}
-
-.topstrap2 {
-  position: relative;
-  width: 142px;
-  height: 111px;
-  top: 20%;
-  background: #000000;
-  border-radius: 0 0 29px;
-  border-top-left-radius: 100px;
-}
-
-.tstrapdesign2 {
-  position: absolute;
-  width: 142px;
-  height: 140px;
-  top: 77%;
-  /* top: 62%; */
-  left: 40%;
-  background: #3b3b3b;
-  border-radius: 27px;
-  z-index: -1;
-}
-
-.time:hover {
-  cursor: pointer;
-}
-.time {
-  position: relative;
-  text-align: center;
-  font-size: 4em;
-  top: 10%;
-}
-
 .musicicon {
   position: absolute;
   top: 82%;
   left: 45%;
-  color: white;
-}
-
-.clockicon {
-  position: absolute;
-  right: 15%;
-  top: 82%;
   color: white;
 }
 
@@ -204,4 +152,55 @@ h6:hover {
   cursor: pointer;
   color: blue;
   font-weight: lighter;
+}
+.topstrap {
+  position: relative;
+  width: 142px;
+  height: 111px;
+  background: #000000;
+  border-radius: 29px 0 29px 0;
+  /* border-bottom-left-radius: 100px; */
+  border-bottom-right-radius: 100px;
+}
+
+.tstrapdesign {
+  position: absolute;
+  width: 142px;
+  height: 145px;
+  top: 5%;
+  /* top: 9%; */
+  background: #3b3b3b;
+  border-radius: 27px;
+}
+
+.topstrap2 {
+  position: relative;
+  width: 142px;
+  height: 111px;
+  top: 20%;
+  background: #000000;
+  border-radius: 0 0 29px;
+  border-top-left-radius: 100px;
+}
+
+.tstrapdesign2 {
+  position: absolute;
+  width: 142px;
+  height: 140px;
+  top: 77%;
+  /* top: 62%; */
+  left: 40%;
+  background: #3b3b3b;
+  border-radius: 27px;
+  z-index: -1;
+}
+
+.time:hover {
+  cursor: pointer;
+}
+.time {
+  position: relative;
+  text-align: center;
+  font-size: 4em;
+  top: 10%;
 }
