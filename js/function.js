@@ -1,9 +1,9 @@
 //messages array
 function msg() {
   let messages = ["AXFLKRT", "AXSNDL", "Shaik"];
-  document.querySelector("#msg #list1").innerHTML = messages[0];
-  document.querySelector("#msg #list2").innerHTML = messages[1];
-  document.querySelector("#msg #list3").innerHTML = messages[2];
+  document.querySelector("#msg #list1").innerHTML = messages[0] + "<hr>";
+  document.querySelector("#msg #list2").innerHTML = messages[1] + "<hr>";
+  document.querySelector("#msg #list3").innerHTML = messages[2] + "<hr>";
 }
 
 // day and time functions
@@ -125,15 +125,15 @@ $(".msgicon").on("click", function() {
 
 //message contents
 $("#msg #list1").on("click", function() {
-  $("#msg #list1").html("Your order ID#0927 will be delivered today");
+  $("#msg #list1").html("Your order ID#0927 will be delivered today" + "<hr>");
 });
 
 $("#msg #list2").on("click", function() {
-  $("#msg #list2").html("Recharge of Rs:399 is successfull");
+  $("#msg #list2").html("Recharge of Rs:399 is successfull" + "<hr>");
 });
 
 $("#msg #list3").on("click", function() {
-  $("#msg #list3").html("Where are you?");
+  $("#msg #list3").html("Where are you?" + "<hr>");
 });
 $(document).ready(function() {
   $("#player,#watch,#msg,.digits,.lap,.playbtn").hide();

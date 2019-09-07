@@ -180,28 +180,28 @@ h6:hover {
 
 #msg {
   position: absolute;
-  height: 55%;
+  height: 60%;
   width: 80%;
   left: 10%;
-  top: 18%;
+  top: 15%;
   background-color: white;
-  border-radius: 0% 25% 25% 25%;
+  border-radius: 0% 17% 17% 17%;
 }
 
 #msg #list1:hover {
   cursor: pointer;
-  color: crimson;
-  font-weight: bolder;
+  color: blue;
+  font-weight: lighter;
 }
 
 #msg #list2:hover {
   cursor: pointer;
-  color: crimson;
-  font-weight: bolder;
+  color: blue;
+  font-weight: lighter;
 }
 
 #msg #list3:hover {
   cursor: pointer;
-  color: crimson;
-  font-weight: bolder;
+  color: blue;
+  font-weight: lighter;
 }
