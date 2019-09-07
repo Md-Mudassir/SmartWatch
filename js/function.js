@@ -105,6 +105,15 @@ $(".musicicon").on("click", function() {
   hidden();
 });
 
+$("#stop").on("click", function() {
+  let lap = document.getElementById("digit").textContent;
+  $(".lap").text(lap);
+});
+
+$("#reset").on("click", function() {
+  $(".lap").html("00:00:00");
+});
+
 $(".clockicon").on("click", function() {
   $("#day,#time,#player,#msg").hide();
   $(".digits,.lap").show();
