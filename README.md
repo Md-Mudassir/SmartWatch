@@ -4,6 +4,8 @@ Hey Geeks! This project is a web based smart watch which can play music over spo
 
 ![enter image description here](https://github.com/Md-Mudassir/SmartWatch/blob/master/img/wat.JPG)
 
+![enter image description here](https://github.com/Md-Mudassir/SmartWatch/blob/master/img/music-horz.jpg)
+
 ## Design:
 Initially I designed the design layout of each process using Figma. 
 
