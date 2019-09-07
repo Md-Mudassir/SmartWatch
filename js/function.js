@@ -135,16 +135,16 @@ $(".msgicon").on("click", function() {
 });
 
 //message contents
-$("#msg #list1").on("click", function() {
-  $("#msg #list1").html("Your order ID#0927 will be delivered today" + "<hr>");
+$("#list1").on("click", function() {
+  $("#list1").html("Your order ID#0927 will be delivered today" + "<hr>");
 });
 
-$("#msg #list2").on("click", function() {
-  $("#msg #list2").html("Recharge of Rs:399 is successfull" + "<hr>");
+$("#list2").on("click", function() {
+  $("#list2").html("Recharge of Rs:399 is successfull" + "<hr>");
 });
 
-$("#msg #list3").on("click", function() {
-  $("#msg #list3").html("Where are you?" + "<hr>");
+$("#list3").on("click", function() {
+  $("#list3").html("Where are you?" + "<hr>");
 });
 
 //onload hide the elements
