@@ -144,7 +144,8 @@ $("#list2").on("click", function() {
 });
 
 $("#list3").on("click", function() {
-  $("#list3").html("Where are you?" + "<hr>");
+  $("#list3")
+    .html("Where are you?" + "<hr>")
 });
 
 //onload hide the elements
