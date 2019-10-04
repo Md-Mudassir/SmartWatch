@@ -83,6 +83,18 @@
   color: white;
 }
 
+#timerpause {
+  position: absolute;
+  top: 65%;
+  left: 46%;
+  color: white;
+}
+
+#timerpause:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .heading {
   margin: 30% auto;
   font-weight: bolder;
@@ -126,14 +138,27 @@ h6:hover {
 }
 #msg {
   position: absolute;
-  height: 70%;
+  height: 67%;
   width: 85%;
   left: 8%;
-  top: 8%;
+  top: 10%;
   background-color: white;
   border-radius: 17%;
 }
 
+.screen {
+  position: absolute;
+  height: 62%;
+  width: 85%;
+  left: 5%;
+  top: 6%;
+  background-color: white;
+  border-radius: 17%;
+  z-index: 1;
+}
+.txt {
+  padding: 20px;
+}
 #list1:hover {
   cursor: pointer;
   color: blue;

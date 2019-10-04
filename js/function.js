@@ -40,6 +40,7 @@ function Time() {
 let watch = document.getElementsByClassName("digits")[0],
   start = document.getElementById("timerplay"),
   stop = document.getElementById("stop"),
+  pause = document.getElementById("timerpause"),
   clear = document.getElementById("clear"),
   seconds = 0,
   minutes = 0,
@@ -78,6 +79,11 @@ stop.onclick = function() {
   clearTimeout(t);
 };
 
+//pause
+pause.onclick = function() {
+  clearTimeout(t);
+};
+
 /* Reset button */
 reset.onclick = function() {
   watch.textContent = "00:00:00";
@@ -90,6 +96,7 @@ reset.onclick = function() {
 function hidden() {
   document.getElementById("stop").style.visibility = "hidden";
   document.getElementById("timerplay").style.visibility = "hidden";
+  document.getElementById("timerpause").style.visibility = "hidden";
   document.getElementById("reset").style.visibility = "hidden";
 }
 
@@ -99,6 +106,15 @@ function show() {
   document.getElementById("reset").style.visibility = "visible";
 }
 
+start.addEventListener("click", function() {
+  document.getElementById("timerplay").style.visibility = "hidden";
+  document.getElementById("timerpause").style.visibility = "visible";
+});
+
+stop.addEventListener("click", function() {
+  document.getElementById("timerplay").style.visibility = "visible";
+  document.getElementById("timerpause").style.visibility = "hidden";
+});
 //JQUERY FUNCTIONS
 
 //toggling the screen using the tags
@@ -106,10 +122,11 @@ $(".musicicon").on("click", function() {
   $("#player").toggle();
   $(".msgicon,.musicicon,.clockicon").removeClass("clr");
   $(".msgicon,.clockicon").addClass("clr");
+  $(".screen").hide();
   hidden();
 });
 
-$("#stop").on("click", function() {
+$("#timerpause").on("click", function() {
   let lap = document.getElementById("digit").textContent;
   $(".lap").text(lap);
 });
@@ -121,10 +138,9 @@ $("#reset").on("click", function() {
 $(".clockicon").on("click", function() {
   $("#day,#time,#player,#msg").hide();
   $(".digits,.lap").show();
+  $(".screen").hide();
+  $(".musicicon,.msgicon,.clockicon").removeClass("clr");
   $(".musicicon,.msgicon").addClass("clr");
-
-  // $(".msgicon,.musicicon").removeClass("clr");
-
   show();
 });
 
@@ -140,25 +156,29 @@ $(".msgicon").on("click", function() {
   $(".msgicon,.musicicon").removeClass("clr");
   $(".musicicon,clockicon").addClass("clr");
   $("#msg").show();
+  $(".screen").hide();
   hidden();
 });
 
 //message contents
 $("#list1").on("click", function() {
-  $("#list1").html("Your order ID#0927 will be delivered today" + "<hr>");
+  $(".screen").show();
+  $(".txt").html("Your order ID#0927 will be delivered today" + "<hr>");
 });
 
 $("#list2").on("click", function() {
-  $("#list2").html("Recharge of Rs:399 is successfull" + "<hr>");
+  $(".screen").show();
+  $(".txt").html("Recharge of Rs:399 is successfull" + "<hr>");
 });
 
 $("#list3").on("click", function() {
-  $("#list3").html("Where are you?" + "<hr>");
+  $(".screen").show();
+  $(".txt").html("Where are you?" + "<hr>");
 });
 
 //onload hide the elements
 $(document).ready(function() {
-  $("#player,#watch,#msg,.digits,.lap,.playbtn").hide();
+  $("#player,#watch,#msg,.screen,.digits,.lap,.playbtn").hide();
   $(".msgicon,.musicicon,.clockicon").removeClass("clr");
   hidden();
 });
