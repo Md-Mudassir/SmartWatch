@@ -104,6 +104,7 @@ function show() {
 //toggling the screen using the tags
 $(".musicicon").on("click", function() {
   $("#player").toggle();
+  $(".msgicon,.musicicon,.clockicon").removeClass("clr");
   hidden();
 });
 
@@ -119,18 +120,23 @@ $("#reset").on("click", function() {
 $(".clockicon").on("click", function() {
   $("#day,#time,#player,#msg").hide();
   $(".digits,.lap").show();
+  $(".msgicon,.musicicon,clockicon").addClass("clr");
+
   show();
 });
 
 $("#watch").on("click", function() {
   $("#day,#time").show();
   $(".digits,.lap,#player,#stop,#msg").hide();
+  $(".msgicon,.musicicon,.clockicon").removeClass("clr");
   hidden();
 });
 
 $(".msgicon").on("click", function() {
   $("#day,#time,#player,.digits,.lap").hide();
+  $(".msgicon,.musicicon,clockicon").removeClass("clr");
   $("#msg").show();
+  $(".msgicon").attr("disabled", true);
   hidden();
 });
 
@@ -144,12 +150,12 @@ $("#list2").on("click", function() {
 });
 
 $("#list3").on("click", function() {
-  $("#list3")
-    .html("Where are you?" + "<hr>")
+  $("#list3").html("Where are you?" + "<hr>");
 });
 
 //onload hide the elements
 $(document).ready(function() {
   $("#player,#watch,#msg,.digits,.lap,.playbtn").hide();
+  $(".msgicon,.musicicon,.clockicon").removeClass("clr");
   hidden();
 });

@@ -29,14 +29,15 @@ Abstract: A web based smart watch which can play music over spotify & has inbuil
                 </div> -->
                 <div class="back mt-4">
                     <div class="cover mt-4 mb-4">
-                        <i class="msgicon fa fa-commenting-o fa-2x d-flex justify-content-start" onclick="msg()"></i>
-                        <i class="clockicon d-flex justify-content-end fa fa-clock-o fa-2x"></i>
-                        <i class="musicicon d-flex justify-content-center fa fa-music fa-2x"></i>
+                        <i class="msgicon clr fa fa-comments fa-2x d-flex justify-content-start" onclick="msg()"></i>
+                        <i class="clockicon clr d-flex justify-content-end fa fa-clock-o fa-2x"></i>
+                        <i class="musicicon clr d-flex justify-content-center fa fa-music fa-2x"></i>
+                        <!-- <i id="timerplay" class="fa fa-pause fa-2x fa  d-flex justify-content-center"></i> -->
                         <i id="timerplay" class="fa fa-play fa-2x d-flex justify-content-center"></i>
                         <i id="reset" class="fa fa-repeat fa-2x  d-flex justify-content-start"></i>
                         <i id="stop" class="fa fa-stop fa-2x d-flex justify-content-end"></i>
                         <h6 id="watch" class="mt-2 text-white d-flex justify-content-center"></h6>
-                        <h1 onclick="Time()" id="time" class="text-white time">Unlock?</h1>
+                        <h1 onclick="Time()" id="time" class="text-white time"></h1>
                         <h1 id="day" class="text-white day"></h1>
                         <div id="msg">
                             <div class="m-2" id="list1"> </div>
@@ -46,7 +47,7 @@ Abstract: A web based smart watch which can play music over spotify & has inbuil
                         <h1 id="digit" class="text-white digits">00:00:00</h1>
                         <p class="lap">00:00:00</p>
                         <iframe id="player" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3"
-                            width="240" height="230" frameborder="0" allowtransparency="true"
+                            width="250" height="230" frameborder="0" allowtransparency="true"
                             allow="encrypted-media"></iframe>
                     </div>
                 </div>

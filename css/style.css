@@ -126,10 +126,10 @@ h6:hover {
 }
 #msg {
   position: absolute;
-  height: 60%;
-  width: 80%;
-  left: 10%;
-  top: 15%;
+  height: 70%;
+  width: 85%;
+  left: 8%;
+  top: 8%;
   background-color: white;
   border-radius: 17%;
 }
@@ -194,4 +194,8 @@ body {
     height: 40vh;
     background-color: black;
   }
+}
+
+.clr {
+  filter: opacity(0.2);
 }
