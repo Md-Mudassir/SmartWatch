@@ -39,8 +39,8 @@ $("#watch").on("click", function() {
 //Message Screen
 $(".msgicon").on("click", function() {
   $("#day,#time,#player,.digits,.lap").hide();
-  $(".msgicon,.musicicon").removeClass("clr");
-  $(".musicicon,clockicon").addClass("clr");
+  $(".msgicon,.musicicon,.clockicon").removeClass("clr");
+  $(".musicicon,.clockicon").addClass("clr");
   $("#msg").show();
   $(".screen").hide();
   hidden();
