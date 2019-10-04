@@ -96,7 +96,7 @@
 }
 
 .heading {
-  margin: 30% auto;
+  margin: 40% auto;
   font-weight: bolder;
   color: white;
 }
@@ -196,8 +196,13 @@ body {
 @media screen and (max-width: 600px) {
   .box1 {
     border: 2px solid black;
-    height: 40vh;
+    height: 30vh;
     background-color: black;
+  }
+  .heading {
+    margin: 20% auto;
+    font-weight: bolder;
+    color: white;
   }
 }
 
