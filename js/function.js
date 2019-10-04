@@ -1,9 +1,9 @@
 //messages array
 function msg() {
   let messages = ["AXFLKRT", "AXSNDL", "Shaik"];
-  document.querySelector("#msg #list1").innerHTML = messages[0] + "<hr>";
-  document.querySelector("#msg #list2").innerHTML = messages[1] + "<hr>";
-  document.querySelector("#msg #list3").innerHTML = messages[2] + "<hr>";
+  document.querySelector("#list1").innerHTML = messages[0] + "<hr>";
+  document.querySelector("#list2").innerHTML = messages[1] + "<hr>";
+  document.querySelector("#list3").innerHTML = messages[2] + "<hr>";
 }
 
 // day and time functions
@@ -33,7 +33,7 @@ function Time() {
   var m = addZero(d.getMinutes());
   x.innerHTML = h + ":" + m;
   w.innerHTML = h + ":" + m;
-  y.innerHTML = weekdays[weekday_value] + " 🌧️";
+  y.innerHTML = weekdays[weekday_value] + "☀️";
 }
 
 //Timer function
@@ -105,6 +105,7 @@ function show() {
 $(".musicicon").on("click", function() {
   $("#player").toggle();
   $(".msgicon,.musicicon,.clockicon").removeClass("clr");
+  $(".msgicon,.clockicon").addClass("clr");
   hidden();
 });
 
@@ -120,7 +121,9 @@ $("#reset").on("click", function() {
 $(".clockicon").on("click", function() {
   $("#day,#time,#player,#msg").hide();
   $(".digits,.lap").show();
-  $(".msgicon,.musicicon,clockicon").addClass("clr");
+  $(".musicicon,.msgicon").addClass("clr");
+
+  // $(".msgicon,.musicicon").removeClass("clr");
 
   show();
 });
@@ -134,9 +137,9 @@ $("#watch").on("click", function() {
 
 $(".msgicon").on("click", function() {
   $("#day,#time,#player,.digits,.lap").hide();
-  $(".msgicon,.musicicon,clockicon").removeClass("clr");
+  $(".msgicon,.musicicon").removeClass("clr");
+  $(".musicicon,clockicon").addClass("clr");
   $("#msg").show();
-  $(".msgicon").attr("disabled", true);
   hidden();
 });
 
