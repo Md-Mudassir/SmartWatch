@@ -7,14 +7,14 @@ function msg() {
 }
 
 // day and time functions
-function addZero(i) {
+addZero = i => {
   if (i < 10) {
     i = 0 + i;
   }
   return i;
-}
+};
 
-function Time() {
+Time = () => {
   var weekdays = new Array(7);
   weekdays[0] = "Sunday";
   weekdays[1] = "Monday";
@@ -34,7 +34,7 @@ function Time() {
   x.innerHTML = h + ":" + m;
   w.innerHTML = h + ":" + m;
   y.innerHTML = weekdays[weekday_value] + "☀️";
-}
+};
 
 //Timer function
 let watch = document.getElementsByClassName("digits")[0],
@@ -47,7 +47,7 @@ let watch = document.getElementsByClassName("digits")[0],
   hours = 0,
   t;
 
-function add() {
+add = () => {
   seconds++;
   if (seconds >= 60) {
     seconds = 0;
@@ -66,52 +66,52 @@ function add() {
     (seconds > 9 ? seconds : "0" + seconds);
 
   timer();
-}
-function timer() {
+};
+timer = () => {
   t = setTimeout(add, 1000);
-}
+};
 
 /* Start button */
 timerplay.onclick = timer;
 
 /* Stop button */
-stop.onclick = function() {
+stop.onclick = () => {
   clearTimeout(t);
 };
 
-//pause
-pause.onclick = function() {
+/* Pause button */
+pause.onclick = () => {
   clearTimeout(t);
 };
 
 /* Reset button */
-reset.onclick = function() {
+reset.onclick = () => {
   watch.textContent = "00:00:00";
   seconds = 0;
   minutes = 0;
   hours = 0;
 };
 
-//show & hide the timer buttons
-function hidden() {
+//Show & hide the timer buttons
+hidden = () => {
   document.getElementById("stop").style.visibility = "hidden";
   document.getElementById("timerplay").style.visibility = "hidden";
   document.getElementById("timerpause").style.visibility = "hidden";
   document.getElementById("reset").style.visibility = "hidden";
-}
+};
 
-function show() {
+show = () => {
   document.getElementById("stop").style.visibility = "visible";
   document.getElementById("timerplay").style.visibility = "visible";
   document.getElementById("reset").style.visibility = "visible";
-}
+};
 
-start.addEventListener("click", function() {
+start.addEventListener("click", () => {
   document.getElementById("timerplay").style.visibility = "hidden";
   document.getElementById("timerpause").style.visibility = "visible";
 });
 
-pause.addEventListener("click", function() {
+pause.addEventListener("click", () => {
   document.getElementById("timerplay").style.visibility = "visible";
   document.getElementById("timerpause").style.visibility = "hidden";
 });

@@ -18,6 +18,7 @@ $("#reset").on("click", function() {
   $(".lap").html("00:00:00");
 });
 
+//Timer Screen
 $(".clockicon").on("click", function() {
   $("#day,#time,#player,#msg").hide();
   $(".digits,.lap").show();
@@ -27,6 +28,7 @@ $(".clockicon").on("click", function() {
   show();
 });
 
+//Watch Sreen
 $("#watch").on("click", function() {
   $("#day,#time").show();
   $(".digits,.lap,#player,#stop,#msg").hide();
@@ -34,6 +36,7 @@ $("#watch").on("click", function() {
   hidden();
 });
 
+//Message Screen
 $(".msgicon").on("click", function() {
   $("#day,#time,#player,.digits,.lap").hide();
   $(".msgicon,.musicicon").removeClass("clr");
